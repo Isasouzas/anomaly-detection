@@ -1,57 +1,53 @@
-## 🔍🚨 Detecção de Anomalias em Vibrações de Máquinas Industriais
+## 🔍🚨 Detecção de Anomalias em Dados Industriais
 
-Este projeto tem como objetivo desenvolver um sistema inteligente para **detecção automática de anomalias** em máquinas industriais com base em leituras de vibração. Utilizando dados reais extraídos de sensores, foram aplicadas técnicas de **aprendizado de máquina não supervisionado** para identificar padrões fora do esperado que podem indicar falhas mecânicas ou necessidade de manutenção.
+Este projeto tem como objetivo desenvolver um sistema para detecção automática de anomalias em dados industriais simulados, utilizando técnicas de aprendizado de máquina não supervisionado. Os dados utilizados são sintéticos, gerados artificialmente para representar medições de sensores em ambientes industriais.
+
+Foram aplicados modelos estatísticos e de machine learning para identificar padrões fora do comportamento esperado, que podem indicar falhas, desvios operacionais ou eventos fora do padrão.
 
 ### Objetivos do Projeto
 
-- Coletar e tratar arquivos JSON com informações de vibração (FFT e RMS).
-- Testar diferentes algoritmos de **detecção de anomalias**.
--  Avaliar o desempenho dos modelos com base em **Anomaly Scores** e visualizações.
+- Coletar e tratar arquivos JSON contendo leituras simuladas de sensores.
+- Testar diferentes algoritmos de detecção de anomalias.
+- Avaliar o desempenho dos modelos com base em scores de anomalia e visualizações.
+- Gerar gráficos que ajudem na interpretação e validação dos resultados.
 
 ### Tecnologias Utilizadas
 
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- **Modelos de Machine Learning**:
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+- Modelos de Machine Learning:
   - Isolation Forest
   - One-Class SVM
-  
-- **Ambiente**: Google Colab + Google Drive
+- Ambiente: Google Colab com dados armazenados no Google Drive
 
 ### Contexto do Problema
 
-A vibração é uma das variáveis mais sensíveis para identificar o estado de funcionamento de máquinas industriais. Mudanças nos padrões de frequência podem indicar falhas como:
+A análise de sinais e medições industriais é uma estratégia fundamental para identificar falhas precoces e evitar paradas inesperadas. Mudanças sutis em dados operacionais podem representar:
 
-- Desbalanceamento de peças rotativas
-- Desgaste de rolamentos
-- Desalinhamentos e folgas
+- Desbalanceamento em componentes rotativos
+- Desgaste mecânico
+- Desvios de processo ou condições fora do padrão
 
-Neste cenário, um modelo de detecção de anomalias permite:
-
--  Sinalizar variações críticas de forma automática
-- Auxiliar equipes de manutenção com alertas baseados em dados
-- Reduzir o risco de falhas inesperadas
+A utilização de modelos não supervisionados permite classificar automaticamente leituras como normais ou anômalas, mesmo sem rótulos definidos previamente.
 
 ### Premissas
 
-- Os dados representam **leituras simuladas**, processadas a partir de arquivos `.json`.
-- O treinamento foi feito com dados considerados "normais", sem rótulos supervisionados.
-- A validação foi realizada com leituras artificialmente modificadas e reais com comportamento atípico.
-- Os resultados dependem do contexto operacional e podem exigir calibração periódica.
-
+- Os dados utilizados são completamente simulados e não representam nenhum sistema real ou corporativo.
+- O modelo foi treinado com dados considerados normais, e testado com variações geradas artificialmente.
+- Os resultados são baseados em comportamento estatístico e podem variar conforme o contexto de aplicação.
+- Este projeto tem fins exclusivamente educacionais e demonstrativos.
 
 ### Exemplos de Visualizações
 
-- Comparação entre curva média de leituras normais e uma leitura anômala
-- Destaque nos picos de frequência mais relevantes
-- Score de anomalia atribuído a cada leitura analisada
+- Comparação entre curvas médias de leituras normais e leituras anômalas simuladas
+- Destaque de pontos com variações abruptas
+- Score de anomalia atribuído a cada leitura
 
 ### Próximos Passos
 
-- Implementação de uma API com **FastAPI** ou interface com **Streamlit** para inferência em tempo real
-- Adoção de métodos de validação com especialistas da área técnica
-- Criação de pipeline automático para ingestão e classificação de novos dados
+- Implementar uma interface com Streamlit ou uma API com FastAPI para testes em tempo real
+- Criar um pipeline automático para leitura, análise e classificação de novos dados simulados
+- Explorar modelos baseados em séries temporais e autoencoders para ambientes com comportamento sequencial
 
 ---
 
->  **Nota**: Por motivos de confidencialidade, os dados utilizados neste projeto não são públicos.
-
+**Aviso**: Todos os dados utilizados neste repositório são sintéticos e foram gerados para fins de demonstração. Nenhuma informação sensível, real ou empresarial foi utilizada.
