@@ -1,4 +1,4 @@
-## Detecção de Anomalias em Vibrações de Máquinas Industriais
+## 🔍🚨 Detecção de Anomalias em Vibrações de Máquinas Industriais
 
 Este projeto tem como objetivo desenvolver um sistema inteligente para **detecção automática de anomalias** em máquinas industriais com base em leituras de vibração. Utilizando dados reais extraídos de sensores, foram aplicadas técnicas de **aprendizado de máquina não supervisionado** para identificar padrões fora do esperado que podem indicar falhas mecânicas ou necessidade de manutenção.
 
