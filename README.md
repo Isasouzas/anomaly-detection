@@ -4,15 +4,11 @@ Este projeto tem como objetivo desenvolver um sistema inteligente para **detecç
 
 ### Objetivos do Projeto
 
-- 📥 Coletar e tratar arquivos JSON com informações de vibração (FFT e RMS).
-- 📊 Realizar análise exploratória dos dados para entender o comportamento das máquinas.
-- ⚙️ Criar variáveis relevantes por meio de **feature engineering**.
-- 🤖 Testar diferentes algoritmos de **detecção de anomalias**.
-- 📈 Avaliar o desempenho dos modelos com base em **Anomaly Scores** e visualizações.
-- 🧪 Prever comportamentos futuros com séries temporais.
-- 📌 Automatizar a análise e classificação de novas leituras.
+- Coletar e tratar arquivos JSON com informações de vibração (FFT e RMS).
+- Testar diferentes algoritmos de **detecção de anomalias**.
+-  Avaliar o desempenho dos modelos com base em **Anomaly Scores** e visualizações.
 
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
 - **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
 - **Modelos de Machine Learning**:
@@ -22,7 +18,7 @@ Este projeto tem como objetivo desenvolver um sistema inteligente para **detecç
   
 - **Ambiente**: Google Colab + Google Drive
 
-## Contexto do Problema
+### Contexto do Problema
 
 A vibração é uma das variáveis mais sensíveis para identificar o estado de funcionamento de máquinas industriais. Mudanças nos padrões de frequência podem indicar falhas como:
 
@@ -36,7 +32,7 @@ Neste cenário, um modelo de detecção de anomalias permite:
 - Auxiliar equipes de manutenção com alertas baseados em dados
 - Reduzir o risco de falhas inesperadas
 
-## Premissas
+### Premissas
 
 - Os dados representam **leituras simuladas**, processadas a partir de arquivos `.json`.
 - O treinamento foi feito com dados considerados "normais", sem rótulos supervisionados.
@@ -44,13 +40,13 @@ Neste cenário, um modelo de detecção de anomalias permite:
 - Os resultados dependem do contexto operacional e podem exigir calibração periódica.
 
 
-## Exemplos de Visualizações
+### Exemplos de Visualizações
 
 - Comparação entre curva média de leituras normais e uma leitura anômala
 - Destaque nos picos de frequência mais relevantes
 - Score de anomalia atribuído a cada leitura analisada
 
-## Próximos Passos
+### Próximos Passos
 
 - Implementação de uma API com **FastAPI** ou interface com **Streamlit** para inferência em tempo real
 - Adoção de métodos de validação com especialistas da área técnica
