@@ -38,7 +38,7 @@ Neste cenário, um modelo de detecção de anomalias permite:
 
 ## Premissas
 
-- Os dados representam **leituras reais e simuladas**, processadas a partir de arquivos `.json`.
+- Os dados representam **leituras simuladas**, processadas a partir de arquivos `.json`.
 - O treinamento foi feito com dados considerados "normais", sem rótulos supervisionados.
 - A validação foi realizada com leituras artificialmente modificadas e reais com comportamento atípico.
 - Os resultados dependem do contexto operacional e podem exigir calibração periódica.
