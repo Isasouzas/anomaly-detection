@@ -1,8 +1,8 @@
-# Detecção de Anomalias em Vibrações de Máquinas Industriais
+## Detecção de Anomalias em Vibrações de Máquinas Industriais
 
 Este projeto tem como objetivo desenvolver um sistema inteligente para **detecção automática de anomalias** em máquinas industriais com base em leituras de vibração. Utilizando dados reais extraídos de sensores, foram aplicadas técnicas de **aprendizado de máquina não supervisionado** para identificar padrões fora do esperado que podem indicar falhas mecânicas ou necessidade de manutenção.
 
-## Objetivos do Projeto
+### Objetivos do Projeto
 
 - 📥 Coletar e tratar arquivos JSON com informações de vibração (FFT e RMS).
 - 📊 Realizar análise exploratória dos dados para entender o comportamento das máquinas.
@@ -14,13 +14,12 @@ Este projeto tem como objetivo desenvolver um sistema inteligente para **detecç
 
 ## Tecnologias Utilizadas
 
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyOD)
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
 - **Modelos de Machine Learning**:
   - Isolation Forest
   - One-Class SVM
   - Local Outlier Factor (LOF)
-  - K-Nearest Neighbors
-  - Autoencoder
+  
 - **Ambiente**: Google Colab + Google Drive
 
 ## Contexto do Problema
@@ -43,7 +42,6 @@ Neste cenário, um modelo de detecção de anomalias permite:
 - O treinamento foi feito com dados considerados "normais", sem rótulos supervisionados.
 - A validação foi realizada com leituras artificialmente modificadas e reais com comportamento atípico.
 - Os resultados dependem do contexto operacional e podem exigir calibração periódica.
-
 
 
 ## Exemplos de Visualizações
