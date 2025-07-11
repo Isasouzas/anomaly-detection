@@ -44,14 +44,7 @@ Neste cenário, um modelo de detecção de anomalias permite:
 - A validação foi realizada com leituras artificialmente modificadas e reais com comportamento atípico.
 - Os resultados dependem do contexto operacional e podem exigir calibração periódica.
 
-## Estrutura do Projeto
-├── notebooks/ # Análises exploratórias e testes de modelos
-├── modelos/ # Modelos treinados e salvos
-├── data/
-│ ├── leituras_semelhantes/ # Dados normais para treino
-│ ├── leituras_muito_diferentes/ # Dados suspeitos para teste
-├── utils/ # Funções auxiliares de leitura, limpeza e visualização
-├── README.md
+
 
 ## Exemplos de Visualizações
 
@@ -59,7 +52,7 @@ Neste cenário, um modelo de detecção de anomalias permite:
 - Destaque nos picos de frequência mais relevantes
 - Score de anomalia atribuído a cada leitura analisada
 
-## 💡 Próximos Passos
+## Próximos Passos
 
 - Implementação de uma API com **FastAPI** ou interface com **Streamlit** para inferência em tempo real
 - Adoção de métodos de validação com especialistas da área técnica
