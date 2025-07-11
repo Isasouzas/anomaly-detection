@@ -14,7 +14,6 @@ Este projeto tem como objetivo desenvolver um sistema inteligente para **detecç
 - **Modelos de Machine Learning**:
   - Isolation Forest
   - One-Class SVM
-  - Local Outlier Factor (LOF)
   
 - **Ambiente**: Google Colab + Google Drive
 
